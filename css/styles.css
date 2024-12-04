@@ -125,3 +125,19 @@ header nav ul li a.active, header nav ul li a:hover {
     transition: 1s;
 }
 
+footer p {
+    text-align: center;
+    padding: 30px 0px;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  footer p a {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  footer p a:hover {
+    color: #ec6090;
+  }
+
