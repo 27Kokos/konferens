@@ -14,6 +14,21 @@ header {
     padding: 30px 70px;
 }
 
+.logo {
+  color: #f08d90; /* Основной цвет логотипа */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Обеспечение одинакового цвета для всех состояний */
+.logo:link, /* Стандартное состояние (не посещена) */
+.logo:visited, /* Посещенная ссылка */
+.logo:hover, /* При наведении */
+.logo:active { /* Во время нажатия */
+  color: #f08d90; /* Цвет остается неизменным */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,14 +61,44 @@ header nav ul li a.active, header nav ul li a:hover {
 }
 
 .prof {
-    background-color: #27292a;
-    height: 40px;
-    width: 100px;
-    border-radius: 20px; /* Овал */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Центровка текста внутри овала */
-    transition: background-color 0.3s ease; /* Эффект при наведении */
+  background-color: #27292a;
+  height: 40px;
+  min-width: 150px; /* Делаем овальный блок */
+  padding: 0 10px;
+  border-radius: 20px; /* Закругленные углы для овала */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.prof a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #677788; /* Цвет текста */
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.prof a.active {
+  color: #f08d90; /* Цвет активной ссылки */
+}
+
+.prof:hover {
+  background-color: #e6006a; /* Изменение цвета фона при наведении */
+}
+
+.prof .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Аватарка в виде круга */
+  object-fit: cover; /* Корректное отображение картинки */
+  margin-right: 10px; /* Отступ между аватаркой и текстом */
+}
+
+.prof span {
+  white-space: nowrap; /* Текст не переносится */
 }
 
 .highlight{
@@ -67,14 +112,6 @@ header nav ul li a.active, header nav ul li a:hover {
     text-decoration: none;
 }
 
-.prof:hover {
-    background-color: #e6006a; /* Изменение цвета фона при наведении */
-    transition: 1s;
-}
-
-.prof a:hover {
-    color: #fff; /* Цвет текста при наведении */
-}
 
 .hero1 {
     background-color: #27292a;
@@ -122,6 +159,7 @@ header nav ul li a.active, header nav ul li a:hover {
     display: inline-block;
     width: 100px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .hero-content .btn:hover {

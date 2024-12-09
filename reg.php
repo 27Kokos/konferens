@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kokodjam</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css?v=1.0">
 </head>
 
 <body>
@@ -28,6 +28,7 @@
       <br>
     </div>
   </div>
+  <script src="script.js"></script>
   <?php include "footer.php"; ?>
 </body>
 

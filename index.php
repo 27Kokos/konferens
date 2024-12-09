@@ -19,7 +19,7 @@
             </div>
         </section>
     </div>
-
+    <script src="script.js"></script>
     <?php include "footer.php"; ?>
 </body>
 
