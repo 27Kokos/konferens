@@ -10,9 +10,11 @@
 
 <body>
   <?php include "header.php"; ?>
+
   <!-- Форма регистрации -->
   <div class="login">
     <div class="login-header">
+      <h1>Регистрация</h1>
     </div>
     <div class="login-form">
       <h3>Имя пользователя </h3>
@@ -25,9 +27,14 @@
       <input type="password" placeholder="Password" />
       <br>
       <input type="button" value="Зарегистрироваться" class="button" />
-      <br>
+    </div>
+
+    <!-- Кнопка "Войти" -->
+    <div class="login-link-container">
+      <a href="/login.php" class="btn-login">Уже есть аккаунт? Войти</a>
     </div>
   </div>
+
   <script src="script.js"></script>
   <?php include "footer.php"; ?>
 </body>
